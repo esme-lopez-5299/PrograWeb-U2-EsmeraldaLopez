@@ -1,0 +1,25 @@
+﻿html {
+    background-color: white;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial;
+    margin: auto;
+    padding: 10%;
+    width: 75%;
+    text-align: center;
+}
+
+    body h2, body h3, body h1 {
+        margin: 0px;
+    }
+
+    body form {
+        width: 50%;
+        margin: auto;
+    }
+
+        body form label, body form input {
+            margin-bottom: 15px;
+        }
