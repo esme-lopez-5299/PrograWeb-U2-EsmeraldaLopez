@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Practica3_Presidentes.Models.Presidente>
+@{
+    Layout = "_Layout";
+}
+
+<div class="imagenes">
+    <ul>
+        @foreach (var p  in Model)
+        {
+            <li>
+                <a href="~/Home/Biografia/@p.Id">
+                    <img src="~/presidentes/@(p.Id).jpg">
+                    <p>
+                       @p.Nombre
+                        <br>@p.InicioGobierno.Year-@p.TerminoGobierno.Value.Year
+                    </p>
+                </a>
+            </li>
+
+        }
+
+    </ul>
+</div>
+
