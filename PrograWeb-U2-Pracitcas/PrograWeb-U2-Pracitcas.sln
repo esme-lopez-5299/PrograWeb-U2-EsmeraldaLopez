@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad2", "Actividad2\Ac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Villancicos", "Villancicos\Villancicos.csproj", "{5551DB31-CEAF-4641-8FAD-0CAD177E1219}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica3-Presidentes", "Practica3-Presidentes\Practica3-Presidentes.csproj", "{35764D5C-3743-472C-8E17-4C276960F1D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practica3-Presidentes", "Practica3-Presidentes\Practica3-Presidentes.csproj", "{35764D5C-3743-472C-8E17-4C276960F1D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica4-Materias", "Practica4-Materias\Practica4-Materias.csproj", "{6276A4C6-575F-4560-AF8A-71EB751C51B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{35764D5C-3743-472C-8E17-4C276960F1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35764D5C-3743-472C-8E17-4C276960F1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35764D5C-3743-472C-8E17-4C276960F1D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6276A4C6-575F-4560-AF8A-71EB751C51B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6276A4C6-575F-4560-AF8A-71EB751C51B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6276A4C6-575F-4560-AF8A-71EB751C51B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6276A4C6-575F-4560-AF8A-71EB751C51B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Practica4_Materias.Models.Carreras>
+@{
+    Layout = "_Layout";
+}
+<h1>Oferta Académica</h1>
+
+
+<ol class="rectangle-list">
+    @foreach (var item in Model)
+    {
+
+        <li><a href="~/@item.Nombre.Replace(" ", "-")">@item.Plan @item.Nombre</a></li>
+
+    }
+</ol>

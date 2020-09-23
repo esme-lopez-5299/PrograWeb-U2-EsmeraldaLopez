@@ -1,0 +1,51 @@
+﻿@model Practica4_Materias.Models.ReticulaViewModel
+@{
+    Layout= "_Layout";
+}
+
+<h1>
+    <a class="btn" href="javascript: history.back()">&#x25c0; Regresar</a>
+    @Model.Nombre
+</h1>
+
+
+
+<h2>@Model.Plan</h2>
+<h2>Total de creditos: @Model.Creditos</h2>
+<section class="reticula">
+    <table>
+        <thead>
+            <tr>
+                <th>1 semestre</th>
+                <th>2 semestre</th>
+                <th>3 semestre</th>
+                <th>4 semestre</th>
+                <th>5 semestre</th>
+                <th>6 semestre</th>
+                <th>7 semestre</th>
+                <th>8 semestre</th>
+                <th>9 semestre</th>
+            </tr>
+        </thead>
+        <tr>        
+        @foreach (var lista in Model.Materias)
+	{
+		 <td>
+             @foreach (var m in lista)
+             {
+
+             <div class="materia">
+                 <span class="clave">@m.Clave</span>
+                 <span class="nombre">@m.Nombre</span>
+                 <span class="tpc">@m.HorasTeoricas - @m.HorasPracticas - @m.Creditos </span>
+             </div>
+
+             }
+         </td>
+
+	}
+        </tr>
+
+    </table>
+</section>
+
