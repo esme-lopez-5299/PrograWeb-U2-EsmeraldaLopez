@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practica3-Presidentes", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica4-Materias", "Practica4-Materias\Practica4-Materias.csproj", "{6276A4C6-575F-4560-AF8A-71EB751C51B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad3-Pixar", "Actividad3-Pixar\Actividad3-Pixar.csproj", "{8CD03D19-B3E8-4ECF-91F7-184BE56C1AF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6276A4C6-575F-4560-AF8A-71EB751C51B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6276A4C6-575F-4560-AF8A-71EB751C51B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6276A4C6-575F-4560-AF8A-71EB751C51B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD03D19-B3E8-4ECF-91F7-184BE56C1AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD03D19-B3E8-4ECF-91F7-184BE56C1AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD03D19-B3E8-4ECF-91F7-184BE56C1AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD03D19-B3E8-4ECF-91F7-184BE56C1AF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

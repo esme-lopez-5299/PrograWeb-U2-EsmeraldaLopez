@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Actividad3_Pixar.Models.Pelicula>
+
+@{
+    Layout = "_Layout";
+}
+
+<header>
+    <nav class="menuHorizontal">
+        <a href="~/Home/Index">
+            <img id="logo" src="~/images/Disney_pixar.png">
+        </a>
+        <ul>
+            <li>
+                <a href="~/Home/Index">Inicio</a>
+            </li>
+            <li class="selected">
+                <a href="~/peliculas">Películas</a>
+            </li>
+
+            <li>
+                <a href="~/cortos">Cortometrajes</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <div id="pelis">
+
+        @foreach (var p in Model)
+        {
+            <div>
+                <a class="imgPelicula" href="~/peliculas/@p.Nombre.Replace(" ", "-")">
+                    <img src="~/images/portadas/@(p.Id)_p.jpg" alt="@p.Nombre">
+                </a>
+                <div class="nombrePelicula">
+                    <p>@p.Nombre</p>
+                </div>
+            </div>
+        }
+    </div>
+
+</main>
