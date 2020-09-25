@@ -22,7 +22,15 @@ namespace Actividad3_Pixar.Controllers
         {
             pixarContext contexto = new pixarContext();
             var peliculas = contexto.Pelicula.OrderBy(x => x.Nombre);
-            return View(peliculas);
+            if(peliculas==null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(peliculas);
+            }
+            
         }
 
         [Route("peliculas/{id}")]
@@ -63,12 +71,17 @@ namespace Actividad3_Pixar.Controllers
             
             CortosViewModel vm = new CortosViewModel();
             var listaCategorias = contexto.Categoria.Include(x => x.Cortometraje).OrderBy(x => x.Nombre);
-
-            vm.Categoria = listaCategorias;
-
-
-
-            return View(vm);
+            if(listaCategorias==null)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                vm.Categoria = listaCategorias;
+                return View(vm);
+            }
+           
+            
         }
 
 
