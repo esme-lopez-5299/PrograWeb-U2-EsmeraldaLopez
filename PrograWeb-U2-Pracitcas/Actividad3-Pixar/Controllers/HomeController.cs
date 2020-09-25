@@ -30,10 +30,11 @@ namespace Actividad3_Pixar.Controllers
         {
             pixarContext contexto = new pixarContext();
 
-            var peliparametro = id.Replace("-", " ").ToUpper();            
-            var peli = contexto.Pelicula.Include(x=>x.Apariciones).FirstOrDefault(x => x.Nombre.ToUpper() == peliparametro);
+            var peliparametro = id.Replace("-", " ").ToUpper();
+            var peli = contexto.Pelicula.Include(x => x.Apariciones).FirstOrDefault(x => x.Nombre.ToUpper() == peliparametro);
             var infoApariciones = contexto.Apariciones.Include(x => x.IdPersonajeNavigation).Include(x => x.IdPeliculaNavigation)
                 .Where(x => (x.IdPelicula == peli.Id)).Select(x => x);
+
             if (peli==null)
             {
                 return RedirectToAction("Peliculas");
@@ -58,9 +59,6 @@ namespace Actividad3_Pixar.Controllers
         {
 
             pixarContext contexto = new pixarContext();
-
-
-
 
             
             CortosViewModel vm = new CortosViewModel();
