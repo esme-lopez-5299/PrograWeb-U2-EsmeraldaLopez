@@ -7,12 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="~/css/font-awesome.css" rel="stylesheet">
     <link href="~/css/estilos.css" rel="stylesheet" />
-    <title>Inicio | Pixar</title>
+    <title>@ViewBag.Titulo | Pixar</title>
     <link rel="icon" href="icon.png">
 </head>
 
 <body class="index">
-   @RenderBody()
+    <header>
+        <nav class="menuHorizontal">
+            <a  href="~/Home/Index">
+                <img id="logo" src="~/images/Disney_pixar.png">
+            </a>
+            <ul>
+                <li class=@ViewBag.estiloi>
+                    <a href="~/Home/Index">Inicio</a>
+                </li>
+                <li class=@ViewBag.estilop>
+                    <a href="~/peliculas">Películas</a>
+                </li>
+
+                <li class=@ViewBag.estiloc>
+                    <a href="~/cortos">Cortometrajes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
     <footer class="footer-distributed">
 
         <div class="footer-right">

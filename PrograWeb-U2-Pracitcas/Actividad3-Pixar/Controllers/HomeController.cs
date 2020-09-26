@@ -13,6 +13,8 @@ namespace Actividad3_Pixar.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Titulo = "Inicio";
+            ViewBag.estiloi = "selected";
             return View();
         }
 
@@ -28,6 +30,8 @@ namespace Actividad3_Pixar.Controllers
             }
             else
             {
+                ViewBag.estilop = "selected";
+                ViewBag.Titulo = "Peliculas";
                 return View(peliculas);
             }
             
@@ -49,6 +53,8 @@ namespace Actividad3_Pixar.Controllers
             }
             else
             {
+                ViewBag.estilop = "selected";
+                ViewBag.Titulo = "Peliculas";
                 BichosViewModel vm = new BichosViewModel();
 
                 vm.Nombre = peli.Nombre;
@@ -77,6 +83,8 @@ namespace Actividad3_Pixar.Controllers
             }
             else
             {
+                ViewBag.estiloc = "selected";
+                ViewBag.Titulo = "Cortos";
                 vm.Categoria = listaCategorias;
                 return View(vm);
             }
@@ -99,6 +107,8 @@ namespace Actividad3_Pixar.Controllers
             }
             else
             {
+                ViewBag.estiloc = "selected";
+                ViewBag.Titulo = "Cortos";
                 Cortometraje cView = new Cortometraje();
                 cView.Id = corto.Id;
                 cView.IdCategoria = corto.IdCategoria;
