@@ -1,0 +1,27 @@
+﻿@model IEnumerable<U2Practica5_SweetBakery.Models.Recetas>
+@{
+    Layout = "_Layout";
+}
+
+
+<section class="contenedor">
+
+
+    @foreach (var item in Model)
+    {
+        <div>
+            <div>
+                <img src="~/imagenes/recetas/@(item.Id).png" />
+            </div>
+            <a href="~/Receta/@item.Nombre.Replace(" ", "-")">
+                <h2>@item.Nombre</h2>
+            </a>
+            <p>@item.Descripcion</p>
+        </div>
+
+
+    }
+
+</section>
+
+

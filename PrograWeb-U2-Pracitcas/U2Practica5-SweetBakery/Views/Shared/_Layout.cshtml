@@ -1,0 +1,58 @@
+﻿@inject U2Practica5_SweetBakery.Services.CategoriasService servicio
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SWEET BAKERY</title>
+    <link rel="stylesheet" href="~/pasteleria.css" />
+</head>
+<body>
+    <header>
+        <a id="logo">
+            <img src="~/imagenes/index/sweetbakery.png" />
+        </a>
+        <ul class="Menu">
+            <li>
+                <a href="~/">Inicio</a>
+            </li>
+            <li>
+                <a href="~/Productos">Productos</a>
+            </li>
+            <li>
+                <a>Recetas</a>
+                <ul>
+                    @foreach (var item in servicio.Categorias)
+                    {
+                        <li><a href="~/Recetas/@item.Nombre">@item.Nombre</a></li>
+                    }
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main>        
+        @RenderBody()
+    </main>
+    <footer>
+        <h3>Siguenos:</h3>
+        <a href="#">
+            <img src="~/imagenes/facebook.png" />
+        </a>
+        <a href="#">
+            <img src="~/imagenes/twitter.png" />
+        </a>
+        <a href="#">
+            <img src="~/imagenes/pinterest.png" />
+        </a>
+        <a href="#">
+            <img src="~/imagenes/youtube.png" />
+        </a>
+    </footer>
+</body>
+</html>
+
+
+
+
+

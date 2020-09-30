@@ -1,0 +1,41 @@
+﻿@model U2Practica5_SweetBakery.Models.ViewModels.RecetaViewModel
+@{
+    Layout = "_Layout";
+}
+
+
+<section id="receta">
+    <h1 id="nombre">@Model.Receta.Nombre</h1>
+    <img src="~/imagenes/recetas/@(Model.Receta.Id).png" id="imagen" />
+    <p id="resena">@Model.Receta.Reseña</p>
+    <div>
+        <h3>Ingredientes</h3>
+        <p id="ingredientes">
+            @Html.Raw(Model.Receta.Ingredientes)
+        </p>
+    </div>
+    <div>
+        <h3>Procedimiento</h3>
+        <p id="procedimiento">
+            @Html.Raw(Model.Receta.Procedimiento)
+        </p>
+    </div>
+</section>
+
+
+<aside>
+    <h2>Más Recetas</h2>
+
+    @foreach (var item in Model.Otras)
+	{
+<a href="~/Receta/@item.Nombre.Replace(" ", "-")">
+    <div>
+        <img src="~/imagenes/recetas/@(item.Id).png" />
+    </div>
+    <h3>Cupcakes al whisky</h3>
+</a> 
+	}  
+</aside>
+
+
+
