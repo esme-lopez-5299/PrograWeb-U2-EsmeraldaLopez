@@ -1,0 +1,24 @@
+﻿@model U2Actividad5_Animales.Models.ViewModels.IndexViewModel
+@{
+    Layout = "_Layout";
+}
+<div class="slides">
+    <img src="~/images/carousel@(Model.NumeroImagen).jpg">
+</div>
+
+<h1>Clasificación de los vertebrados</h1>
+
+<div class="clases">
+    @foreach (var clase in Model.Clases)
+    {
+        <div>
+            <a href="~/@clase.Nombre">
+                <img src="~/clases/@(clase.Id).jpg">
+                <h1>@clase.Nombre</h1>
+                <p>@clase.Descripcion</p>
+            </a>
+        </div>
+    }
+
+</div>
+

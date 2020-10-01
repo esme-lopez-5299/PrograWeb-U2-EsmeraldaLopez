@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practica4-Materias", "Pract
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad3-Pixar", "Actividad3-Pixar\Actividad3-Pixar.csproj", "{8CD03D19-B3E8-4ECF-91F7-184BE56C1AF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U2Practica5-SweetBakery", "U2Practica5-SweetBakery\U2Practica5-SweetBakery.csproj", "{DE32FC3D-8423-4111-9FB6-E8C5A9CFE629}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U2Practica5-SweetBakery", "U2Practica5-SweetBakery\U2Practica5-SweetBakery.csproj", "{DE32FC3D-8423-4111-9FB6-E8C5A9CFE629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U2Actividad5-Animales", "U2Actividad5-Animales\U2Actividad5-Animales.csproj", "{D4A3C589-9F46-4686-927D-59261530F5AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{DE32FC3D-8423-4111-9FB6-E8C5A9CFE629}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE32FC3D-8423-4111-9FB6-E8C5A9CFE629}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE32FC3D-8423-4111-9FB6-E8C5A9CFE629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A3C589-9F46-4686-927D-59261530F5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A3C589-9F46-4686-927D-59261530F5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A3C589-9F46-4686-927D-59261530F5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A3C589-9F46-4686-927D-59261530F5AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

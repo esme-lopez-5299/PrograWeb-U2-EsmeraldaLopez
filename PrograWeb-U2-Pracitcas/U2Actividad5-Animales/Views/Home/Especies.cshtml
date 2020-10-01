@@ -1,0 +1,30 @@
+﻿@model U2Actividad5_Animales.Models.ViewModels.EspeciesViewModel
+@{
+    Layout = "_Layout";
+}
+
+
+<h1>@Model.NombreClase</h1>
+
+<ul class="especies">
+   
+    @foreach (var item in Model.Especies)
+    {
+        <li>
+
+            <div>
+                <img src="especies/@(item.Id ).jpg">
+            </div>
+
+            <h2>@item.Especie</h2>
+            <p><label>Habitat: </label>@item.Habitat</p>
+            <p><label>Peso: </label>@item.Peso</p>
+            <p><label>Tamaño: </label>@item.Tamaño</p>
+            <p>@item.Observaciones </p>
+            
+
+        </li>
+    }
+    </ul>
+
+
